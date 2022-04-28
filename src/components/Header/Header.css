@@ -1,0 +1,40 @@
+.header {
+  background: #fff;
+  padding: 16px;
+  box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.033);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  @media (max-width: 991px) {
+    padding: 16px;
+    .container {
+      padding: 0;
+    }
+  }
+  @media (max-width: 480px) {
+    padding: 8px 12px;
+  }
+}
+
+.logo {
+  display: flex;
+  width: 123px;
+  @media (max-width: 480px) {
+    width: 102px;
+    margin: 2px 0;
+  }
+}
+
+.user-header {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  z-index: 1;
+  margin: 23px;
+  @media (max-width: 991px) {
+    margin-left: 30px;
+  }
+}

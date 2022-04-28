@@ -1,0 +1,73 @@
+.product {
+  display: flex;
+  border: 2px solid #eaeaea;
+  margin: 5px;
+  width: 50%;
+  border-radius: 10px;
+  justify-content: center;
+  flex-direction: row;
+}
+.product:hover {
+  border: 2px solid green;
+}
+.product-image {
+  display: flex;
+  border-radius: 10px;
+  width: 50%;
+  height: 150px;
+  transition: transform 300ms ease-in;
+  transform: scale(1);
+  @media (min-width: 991px) {
+    min-height: 200px;
+  }
+}
+.product-image:hover {
+  transform: scale(1.1);
+}
+.product-name {
+  display: flex;
+  flex-direction: column;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 20px;
+  margin-bottom: 8px;
+}
+.product-price {
+  flex-direction: column;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-bottom: 16px;
+}
+.product-price:before {
+  content: "TL ";
+}
+.product-name,
+.product-price {
+  color: grey;
+  padding: 0 16px;
+  text-align: center;
+}
+.product-action {
+  flex-direction: column;
+  padding: 16px;
+  width: 100%;
+  transition: all 300ms ease-in;
+}
+.product-action button:hover {
+  background-color: black;
+  color: #e8e8e8;
+}
+
+.quantity {
+  height: 24px;
+  width: 48px;
+  text-align: center;
+  margin: 0 12px;
+  border-radius: 2px;
+  border: 1px solid grey;
+}
+.quantity:focus {
+  outline: none;
+  border-color: green;
+}
